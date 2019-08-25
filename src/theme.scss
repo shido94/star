@@ -1,0 +1,82 @@
+// genereate palettes using http://mcg.mbitson.com/
+
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+@import '~@angular/material/theming';
+
+@include mat-core();
+
+$theme-primary: (
+  50 : #fdf8e6,
+  100 : #fbedc2,
+  200 : #f8e199,
+  300 : #f5d470,
+  400 : #f3cb51,
+  500 : #f1c232,
+  600 : #efbc2d,
+  700 : #edb426,
+  800 : #ebac1f,
+  900 : #e79f13,
+  A100 : #ffffff,
+  A200 : #fff4e2,
+  A400 : #ffe2af,
+  A700 : #ffd896,
+  contrast: (
+    50 : #000000,
+    100 : #000000,
+    200 : #000000,
+    300 : #000000,
+    400 : #000000,
+    500 : #000000,
+    600 : #000000,
+    700 : #000000,
+    800 : #000000,
+    900 : #000000,
+    A100 : #000000,
+    A200 : #000000,
+    A400 : #000000,
+    A700 : #000000,
+  )
+);
+
+$theme-accent: (
+  50 : #262626,
+  100 : #262626,
+  200 : #262626,
+  300 : #262626,
+  400 : #262626,
+  500 : #000000,
+  600 : #000000,
+  700 : #000000,
+  800 : #000000,
+  900 : #000000,
+  A100 : #262626,
+  A200 : #262626,
+  A400 : #262626,
+  A700 : #262626,
+  contrast: (
+    50 : #000000,
+    100 : #000000,
+    200 : #000000,
+    300 : #ffffff,
+    400 : #ffffff,
+    500 : #ffffff,
+    600 : #ffffff,
+    700 : #ffffff,
+    800 : #ffffff,
+    900 : #ffffff,
+    A100 : #000000,
+    A200 : #000000,
+    A400 : #ffffff,
+    A700 : #ffffff,
+  )
+);
+
+$theme-palette-primary: mat-palette($theme-primary);
+$theme-palette-accent: mat-palette($theme-accent);
+
+$theme-app-theme: mat-light-theme($theme-palette-primary, $theme-palette-accent);
+@include angular-material-theme($theme-app-theme);
+
+.header, .footer {
+  background: mat-color($theme-palette-accent, 50);
+}

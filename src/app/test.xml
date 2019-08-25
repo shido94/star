@@ -1,0 +1,15 @@
+
+<students>
+  <student>
+    <name>prashant</name>
+    <email>prashant@gmail.com</email>
+    <home-town>meerut</home-town>
+  </student>
+  <student>
+    <name>suresh</name>
+    <email>prashant@gmail.com</email>
+    <home-town>meerut</home-town>
+  </student>
+  <student></student>
+  <student></student>
+</students>

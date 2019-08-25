@@ -1,0 +1,25 @@
+<div class="smallSize">
+  <div class="header" ngClass.lt.md="menu" fxLayout="row" fxLayout.xs="column wrap" fxLayoutAlign="start center"
+       fxLayoutAlign.xs="start start"  fxLayoutGap.sm="10px" >
+    <img src='./assets/images/logo.png' height="50px" routerLink="videos">
+    <button mat-button routerLink="videos" class="video">Videos</button>
+    <button mat-button routerLink="email">Emails</button>
+    <button mat-button routerLink="actions">Call to actions</button>
+    <button mat-button routerLink="templates">Templates</button>
+    <button mat-button routerLink="notifications">Notifications</button>
+    <a mat-button href="https://intercom.help/vaetas-support/vaetas-dashboard-help-center" target="_blank">Help Center</a>
+    <span fxFlex="auto"></span>
+    <button mat-button fxFlexAlign="center" class="login" routerLink="login" *ngIf="!username">LoginResponse</button>
+    <button mat-button fxFlexAlign="center" class="login" [matMenuTriggerFor]="menu" *ngIf="username">
+      {{ username }}
+      <i class="material-icons">
+        keyboard_arrow_down
+      </i>
+    </button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item>Accounts</button>
+      <button mat-menu-item>Settings</button>
+      <button mat-menu-item (click)="logout()">Logout</button>
+    </mat-menu>
+  </div>
+</div>

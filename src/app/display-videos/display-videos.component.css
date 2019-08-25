@@ -1,0 +1,24 @@
+:host {
+  display: block;
+}
+mat-card {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+
+
+/*:host {*/
+  /*display: block;*/
+/*}*/
+/*mat-card {*/
+  /*width: 100%;*/
+  /*height: 100%;*/
+  /*box-sizing: border-box;*/
+/*}*/
+
+mat-card img{
+  height: 185px;
+  width: 250px
+}

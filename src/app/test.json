@@ -1,0 +1,21 @@
+{
+  "students": [
+    {
+      "name": "prashant",
+      "email": "prashant@gmail.com",
+      "marks": 30.5,
+      "detained": true,
+      "profile": {
+        "avatarUrl": "http://fsdfds",
+        "bio": "I love Angular"
+      }
+    },
+    {
+      "name": "prashant",
+      "email": "prashant@gmail.com",
+      "marks": 30.5
+    },
+    {},
+    {}
+  ]
+}

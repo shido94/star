@@ -1,0 +1,18 @@
+
+.search{
+  margin-right: 30px;
+}
+
+input {
+  size: 1000px;
+}
+
+mat-form-field input {
+  width:700px !important;
+}
+
+.placeHolder {
+  position: absolute;
+  pointer-events: none;
+  top: 1px;
+}

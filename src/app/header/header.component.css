@@ -1,0 +1,25 @@
+.header button, .header img {
+  font-family: Lato,sans-serif;
+}
+
+.header {
+  /*margin: 0 5px;*/
+  justify-content: space-around;
+}
+
+img {
+  margin : 25px;
+}
+
+.login {
+  margin-right: 40px;
+}
+
+.video {
+  margin-left: 30px;
+  fxLayout: column wrap;
+}
+
+a {
+  color: #ffffff;
+}

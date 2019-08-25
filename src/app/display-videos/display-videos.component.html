@@ -1,0 +1,7 @@
+<mat-card>
+  <img mat-card-image [src]="video.thumbnail">
+  <mat-card-content>
+    <!--{{video.title}}-->
+    {{video.title | truncate: 50 }}
+  </mat-card-content>
+</mat-card>
